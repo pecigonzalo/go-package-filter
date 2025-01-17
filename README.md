@@ -50,19 +50,19 @@ need to perform some initial setup steps before you can develop your action.
 1. :hammer_and_wrench: Install the dependencies
 
    ```bash
-   npm install
+   yarn install
    ```
 
 1. :building_construction: Package the TypeScript for distribution
 
    ```bash
-   npm run bundle
+   yarn run bundle
    ```
 
 1. :white_check_mark: Run the tests
 
    ```bash
-   $ npm test
+   $ yarn test
 
    PASS  ./index.test.js
      ✓ throws invalid number (3ms)
@@ -121,15 +121,8 @@ So, what are you waiting for? Go ahead and start customizing your action!
 1. Format, test, and build the action
 
    ```bash
-   npm run all
+   yarn run all
    ```
-
-   > This step is important! It will run [`ncc`](https://github.com/vercel/ncc)
-   > to build the final JavaScript action code with all dependencies included.
-   > If you do not run this step, your action will not work correctly when it is
-   > used in a workflow. This step also includes the `--license` option for
-   > `ncc`, which will create a license file for all of the production node
-   > modules used in your project.
 
 1. (Optional) Test your action locally
 
