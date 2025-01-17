@@ -12,7 +12,7 @@ inputs:
   path:
     description: Go project path
     required: true
-    default: "./..."
+    default: './...'
 
 # Define your outputs here.
 outputs:
