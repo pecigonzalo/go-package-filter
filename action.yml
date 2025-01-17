@@ -1,6 +1,6 @@
-name: The name of your action here
-description: Provide a description here
-author: Your name or organization here
+name: Go Package Filter
+description: GitHub action to generate path filters based on Go dependancies
+author: pecigonzalo
 
 # Add your action's branding here. This will appear on the GitHub Marketplace.
 branding:
@@ -9,10 +9,10 @@ branding:
 
 # Define your inputs here.
 inputs:
-  milliseconds:
-    description: Your input description here
+  path:
+    description: Go project path
     required: true
-    default: '1000'
+    default: "./..."
 
 # Define your outputs here.
 outputs:

@@ -1,6 +1,6 @@
 {
   "name": "typescript-action",
-  "description": "GitHub Actions TypeScript template",
+  "description": "GitHub action to generate path filters based on Go dependancies",
   "version": "0.0.0",
   "author": "",
   "type": "module",
@@ -23,7 +23,7 @@
     "node": ">=20"
   },
   "scripts": {
-    "bundle": "npm run format:write && npm run package",
+    "bundle": "yarn run format:write && yarn run package",
     "ci-test": "NODE_OPTIONS=--experimental-vm-modules NODE_NO_WARNINGS=1 npx jest",
     "coverage": "npx make-coverage-badge --output-path ./badges/coverage.svg",
     "format:write": "npx prettier --write .",
@@ -31,9 +31,9 @@
     "lint": "npx eslint .",
     "local-action": "npx local-action . src/main.ts .env",
     "package": "npx rollup --config rollup.config.ts --configPlugin @rollup/plugin-typescript",
-    "package:watch": "npm run package -- --watch",
+    "package:watch": "yarn run package -- --watch",
     "test": "NODE_OPTIONS=--experimental-vm-modules NODE_NO_WARNINGS=1 npx jest",
-    "all": "npm run format:write && npm run lint && npm run test && npm run coverage && npm run package"
+    "all": "yarn run format:write && yarn run lint && yarn run test && yarn run coverage && yarn run package"
   },
   "license": "MIT",
   "dependencies": {
